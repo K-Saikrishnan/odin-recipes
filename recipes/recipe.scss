@@ -1,0 +1,101 @@
+:not(i) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+  line-height: 1.25;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+header h1,
+h2 {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+main {
+  width: 45rem;
+  padding: 1.5rem;
+  border: 1.5rem double #555;
+}
+
+section {
+  margin-bottom: 2rem;
+
+  &#description figure {
+    text-align: center;
+    margin-bottom: 2rem;
+    figcaption {
+      display: none;
+    }
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+    }
+  }
+
+  &#metrics {
+    text-align: center;
+    span {
+      padding: 0.75rem;
+      height: 1.5rem;
+      width: min-content;
+      border: 0.25rem double black;
+      border-radius: 1rem;
+    }
+  }
+
+  sup {
+    vertical-align: super;
+    font-size: smaller;
+  }
+
+  &#steps li,
+  &#ingredients li {
+    margin: 0.75rem;
+  }
+
+  &#steps {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: beige;
+
+  .heart {
+    color: red;
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}

@@ -9,7 +9,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,7 +23,7 @@ header h1 {
   text-align: center;
 }
 
-article {
+section#recipes {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +57,7 @@ article {
 
 footer {
   height: 50px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
