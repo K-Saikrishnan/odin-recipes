@@ -37,9 +37,8 @@ section#recipes a {
 section#recipes img {
   height: 400px;
   width: 300px;
-  border: 10px solid #555;
   border-radius: 15px;
-  box-shadow: 10px;
+  object-fit: cover;
 }
 section#recipes img:hover {
   transform: scale(1.05);
